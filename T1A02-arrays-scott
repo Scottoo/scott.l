@@ -1,0 +1,6 @@
+<h2 align=center>
+try to seperate a complex object arrays by scott</h2>
+open debug window ctrl-shift-i<br><br>
+ 
+<input id="myinput" type=text value="{}"><br>
+<input type=button value="show object" onclick"={
