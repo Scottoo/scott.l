@@ -1,0 +1,42 @@
+<input type=text id="myText01" value=100>
+<input type=button value="run for loop" onclick="{
+document.getElementById('myDiv01').innerHTML =''
+for (let x=0;   x < document.getElementById('myText01').value;  x++){
+
+   if (x % 5 == 0){
+      document.getElementById('myDiv01').innerHTML += '<font color=navy>color, </font>'
+}
+   
+   if (x % 2 == 0){
+      document.getElementById('myDiv01').innerHTML += '<font color=pink>PINK, </font>'
+}
+
+ if (x % 5 == 0){
+      document.getElementById('myDiv01').innerHTML += '<font color=purple>hidden colour, </font>'
+}
+
+ if (x % 10 == 0){
+      document.getElementById('myDiv01').innerHTML += '<font color=red>multiple of ten 10?, </font>'
+}
+
+   if (x % 3 == 0){
+      document.getElementById('myDiv01').innerHTML += '<font color=yellow>Colors, </font>'
+}
+
+   if (x % 1 == 0){
+      document.getElementById('myDiv01').innerHTML += '<font color=green>PINK, </font>'
+}
+
+ 
+
+ 
+ if (x % 11 == 0){
+      document.getElementById('myDiv01').innerHTML += '<font color=orange>select the blank next to it, </font>'
+}
+
+
+  document.getElementById('myDiv01').innerHTML += `x is ` + x + `<br>`
+
+
+}">
+<div id="myDiv01">...</div>
