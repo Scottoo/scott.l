@@ -1,12 +1,41 @@
-<input type=text id="mytext=01" value=3>
+<h2 aligh=center>forloop by scott</h2>
+<input type=text id="myText01" value=10>
+
 <input type=button value="run for loop" onclick="{
 
-document.getElementById('myDiv01').innerHTML=''
+  document.getElementById('myDiv01').innerHTML = ''   
 
- for (let x=0;  x < document.getElementById('myText01').value;  x++){ 
- document.getElementById('myDiv01').innerHTML += `x is ` + x + `<br>`
- }
+  for (let x=5;   x < document.getElementById('myText01').value;    x++){
+     document.getElementById('myDiv01').innerHTML += `x is ` + x + `<br>`
+  }
 
+  
+   
 }">
 
 <div id="myDiv01">...</div>
+
+<input type=text id="myText02" value=10>
+<input type=button value="run for negative loop" onclick="{
+
+  document.getElementById('myDiv02').innerHTML = ''   
+ 
+ for (let x=-10;   x < document.getElementById('myText02').value;    x++){
+     document.getElementById('myDiv02').innerHTML += `x is ` + x + `<br>`
+  }
+
+}">
+<div id="myDiv02">...</div>
+
+
+<input type=text id="myText03" value=10>
+<input type=button value="run for loop" onclick="{
+
+  document.getElementById('myDiv03').innerHTML = ''   
+ 
+ for (let x=0;   x < document.getElementById('myText03').value;    x++){ 
+     document.getElementById('myDiv03').innerHTML += `x is ` + x + `<br>`
+  }
+
+}">
+<div id="myDiv03">...</div>
