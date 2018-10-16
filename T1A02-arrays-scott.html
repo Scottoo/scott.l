@@ -1,6 +1,35 @@
 <h2 align=center>
-try to seperate a complex object arrays by scott</h2>
+Try to seperate a complex object array by scott</h2>
 open debug window ctrl-shift-i<br><br>
- 
-<input id="myinput" type=text value="{}"><br>
-<input type=button value="show object" onclick"={
+
+myCoolObject = <input id="myInput" type=text size=120 
+
+value='{"x":"5", "y":"2", "myArray": [3,7,8]}'><br>
+
+<input type=button value="show Object" onclick="{ 
+   myCoolObject = JSON.parse(document.getElementById('myInput').value)
+
+   document.getElementById('myDiv01').innerHTML = `This is x: `+
+     myCoolObject.x +`, this is y: `+ myCoolObject.y + `<br>` +
+     `Lets print an array `+ myCoolObject.myArray + `<br>` +
+     `Lets print the last number of the array `+ 
+      myCoolObject.myArray[2] + `<br>` 
+
+}"><br>
+<div id="myDiv01">...</div><br>
+myCoolObject = <input id="myInput2" type=text size=120 
+
+value='{"x":"5", "y":"2", "myArray": [3,7,5]}'><br>
+
+<input type=button value="show Object" onclick="{ 
+   myCoolObject = JSON.parse(document.getElementById('myInput2').value)
+
+   document.getElementById('myDiv02').innerHTML = `This is x: `+
+     myCoolObject.x +`, this is y: `+ myCoolObject.y + `<br>` +
+     `Lets print an array `+ myCoolObject.myArray + `<br>` +
+     `Lets print the last number of the array `+ 
+      myCoolObject.myArray[2] + `<br>` 
+
+}"><br>
+<div id="myDiv02">...</div><br>
+
