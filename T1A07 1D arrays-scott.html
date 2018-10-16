@@ -1,21 +1,22 @@
-<h2 aligh=center> 1D arrays by scott</h2>
 
-<input type=text value=3 id="myText01">
 
-<input type=button value="1D Arrays" onclick="{
- myProgramTerms = [] // creates an array
 
-myProgramTerms[0] = `variables`
-myProgramTerms[1] = `decisions`
-myProgramTerms[2] = `for loops`
-document.getElementById('myDiv01').innerHTML =``
+<h2 align=center> 1D Arrays by scott</h2>
 
- for (let myLoop=0; myLoop < 3; myLoop++ ){
-   document.getElementById('myDiv01').innerHTML += myloop + `:`+
-    myProgramTerms[myLoop]+`<br>`
-    } 
+<input type=text value=3 id="myText01" >
+
+<input type=button value="1D Array" onclick="{
+   myProgramTerms = []  // creates an array
+
+   myProgramTerms[0] = `this`
+   myProgramTerms[1] = `is`
+   myProgramTerms[2] = `working`
+   document.getElementById('myDiv01').innerHTML =``
+   for (let myLoop=0;  myLoop < 3;  myLoop++ ){
+    document.getElementById('myDiv01').innerHTML += myLoop + `:`+
+        myProgramTerms[myLoop]+`<br>`
+   }
+
 }">
 
-
-
-<div id"=myDiv01">...</div>
+<div id="myDiv01">....</div>
