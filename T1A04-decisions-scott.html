@@ -1,22 +1,82 @@
-<h2 aligh=center> if statement by scott</h2>
-<input id ="myIn" type=text value=2>
+<input type=text id="myText01" value=50>
+<input type=button value="run for loop" onclick="{
+  document.getElementById('myDiv01').innerHTML = ''   
+  for (let x=0;   x < document.getElementById('myText01').value;    x++){
 
-<input type=button value="decision if statement" onclick="{
-  document.getElementById('myOut').innerHTML =''
+     if (x % 3 == 0){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=g>, </font>'
+     }
+
+   if (x >8){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=red>greater than 8, </font>'
+     }
+
+ if (x % 2 !== 0){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=pink>not 2, </font>'
+     }
+
+ if (x == 10){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=orange>going up, </font>'
+     }
+
+     if (x % 2 == 0){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=green>Even number, </font>'
+     }
+
+   if (x >8){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=brown>greater than 8, </font>'
+     }
+
+ if (x % 14 !== 0){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=purple>not 2, </font>'
+     }
+
+     if (x % 15 == 0){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=lime>this is cool, </font>'
+     }
+
+   if (x >6){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=cyan>smaller than 8, </font>'
+     }
+
+ if (x % 11 !== 0){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=blue>this is black, </font>'
+     }
+
+ if (x % 10 !== 0){
+        document.getElementById('myDiv01').innerHTML += 
+           '<font color=yellow>4 is cool, </font>'
+     }
+
+
+ if (x % 10 == 0){
+        document.getElementById('myDiv01').innerHTML += 
+           'WORKING'
+     }
+
+
+
+
+
+
+
+
+
+
+
+     document.getElementById('myDiv01').innerHTML += `x is ` + x + `<br>`
+  }
    
-x= document.getElementById('myIn').value
-
-if (x <= 3){
-   document.getElementById('myOut').innerHTML +=
-        'wow the number is less than 3<br>'
-}
-
-if (x <= -3){
-   document.getElementById('myOut').innerHTML +=
-        'wow the number is less than -3<br>'
-}
-
 }">
-
-<div id="myOut">...</div>
+<div id="myDiv01">...</div>
 
