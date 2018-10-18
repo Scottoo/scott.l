@@ -1,0 +1,67 @@
+<h2 aligh=center>8 Tons of events by scott</h2>
+
+<div id="myDiv01" style="background:orange; width:90; height:40;" onDblClick="{
+  document.getElementById('myOutput01').innerHTML = 'double click event activated'
+}">double click this div</div>
+<div id="myOutput01">...</div>
+
+
+<input type=text value="change me" onChange="{
+   document.getElementById('myOutput02').innerHTML = 'you changed it to:' + this.value
+}">
+<div id="myOutput02">...</div>
+
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="http://passage.org.uk/wp-content/uploads/2016/12/present.png" alt="Smiley" width="50" height="50">
+
+<script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script>
+<div id="myDiv04">...</div>
+
+<style>
+#droptarget {
+    float: left; 
+    width: 200px; 
+    height: 35px;
+    margin: 55px;
+    margin-top: 155px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+</style>
+<p ondragstart="dragStart(event)" draggable="true" id="dragtarget">move me to the rectangle!</p>
+<div id="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+</div>
+<p id="demo"></p>
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
+function allowDrop(event) {
+    event.preventDefault();
+  document.getElementById("demo").innerHTML = "";
+    event.target.style.border = "4px dotted purple";
+}
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+ document.getElementById("demo").innerHTML = "";
+}
+</script>
+</body>
+
+
+
+
+
+
+
