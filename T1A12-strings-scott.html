@@ -1,0 +1,21 @@
+<h2 aligh=center>strings by scott</h2>
+<input id="myIn" type=text value="lower case">
+<input type=button value="Upcase()" onclick="{
+  document.getElementById('myOut').innerHTML = 
+    document.getElementById('myIn').value.toUpperCase()
+}">
+<div id="myOut">...</div>
+
+<input id="myText02" type=text value="UPPER CASE">
+<input type=button value="Lowercase()" onclick="{
+  document.getElementById('myDiv02').innerHTML = 
+    document.getElementById('myText02').value.toLowerCase()
+}">
+<div id="myDiv02">...</div>
+
+<input id="myText03" type=text value="repeat">
+<input type=button value="repeat()" onclick="{
+  document.getElementById('myDiv03').innerHTML = 
+    document.getElementById('myText03').value.toRepeat(2);
+}">
+<div id="myDiv03">...</div>
