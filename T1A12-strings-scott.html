@@ -1,10 +1,8 @@
-<h2 aligh=center>strings by scott</h2>
-<input id="myIn" type=text value="lower case">
 <input type=button value="Upcase()" onclick="{
-  document.getElementById('myOut').innerHTML = 
-    document.getElementById('myIn').value.toUpperCase()
+  document.getElementById('myDiv01').innerHTML = 
+    document.getElementById('myText01').value.toUpperCase()
 }">
-<div id="myOut">...</div>
+<div id="myDiv01">...</div>
 
 <input id="myText02" type=text value="UPPER CASE">
 <input type=button value="Lowercase()" onclick="{
@@ -13,9 +11,45 @@
 }">
 <div id="myDiv02">...</div>
 
-<input id="myText03" type=text value="repeat">
-<input type=button value="repeat()" onclick="{
-  document.getElementById('myDiv03').innerHTML = 
-    document.getElementById('myText03').value.toRepeat(2);
+<input type=text value="cat" id="myText03">
+<input type=button value="replace()" onclick="{
+document.getElementById('myDiv03').innerHTML = 
+ document.getElementById('myText03').value.replace('cat', 'dog')
 }">
 <div id="myDiv03">...</div>
+
+<input type=text value="this is what I wrote" id="myText04">
+<input type=button value="theIndexOfWhat()" onclick="{
+document.getElementById('myDiv04').innerHTML =
+ document.getElementById('myText04').value.indexOf('what')
+}">
+<div id="myDiv04">...</div>
+
+<input type=text value="this needs to be split" id="myText05">
+<input type=button value="split()" onclick="{
+document.getElementById('myDiv05').innerHTML = 
+ document.getElementById('myText05').value.split(' ', 5)
+}">
+<div id="myDiv05">...</div>
+
+<input type=text value="SLICE" id="myText06">
+<input type=button value="slice()" onclick="{
+document.getElementById('myDiv06').innerHTML = 
+ document.getElementById('myText06').value.slice(2, 4)
+}">
+<div id="myDiv06">...</div>
+
+<input type=text value="my name is scott." id="myText07">
+<input type=button value="endsWithScott" onclick="{
+document.getElementById('myDiv07').innerHTML = 
+ document.getElementById('myText07').value.endsWith('scott.')
+}">
+<div id="myDiv07">...</div>
+
+<input type=text value="hello my name is scott" id="myText08">
+<input type=button value="startsWithMy" onclick="{
+document.getElementById('myDiv08').innerHTML = 
+ document.getElementById('myText08').value.startsWith('my')
+}">
+<div id="myDiv08">...</div>
+
