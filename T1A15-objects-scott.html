@@ -1,8 +1,5 @@
 <h3 align=center>objects-scott</3>
-
-
 Store these Items in a Javascript object <br>
-
 <textarea id="myTextAreaObject" rows="8" cols="70" wrap="false">{
    "firstName": "John",
    "lastName": "Doe",
@@ -10,15 +7,43 @@ Store these Items in a Javascript object <br>
    "eyeColor": "blue"
 }
 </textarea><br> 
-    
-
-
-<input id="myButton128" type="button" value="Store as an object" onclick="{
+    <input id="myButton128" type="button" value="Store as an object" onclick="{
       
     var myPerson = {}                                                              
     myPerson = JSON.parse(document.getElementById('myTextAreaObject').value)   
-                                                                         
-    document.getElementById('myDiv128').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + 
+    document.getElementById('myDiv01').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + 
           myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'
 }">
-<div id='myDiv128'>...</div><br>
+<div id='myDiv01'>...</div>
+
+<textarea id="myTextAreaObject02" rows="8" cols="70" wrap="false">{
+   "firstName": "dave",
+   "lastName": "hahahahahahhahaha",
+   "age": 0.1,
+   "eyeColor": "red"
+}
+</textarea><br> 
+    <input id="myButton1" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject02').value)   
+    document.getElementById('myDiv02').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + 
+          myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'
+}">
+<div id='myDiv02'>...</div>
+
+<textarea id="myTextAreaObject03" rows="8" cols="70" wrap="false">{
+   "firstName": "shoe",
+   "lastName": "eat",
+   "age": 100.9,
+   "eyeColor": "rainbow"
+}
+</textarea><br> 
+    <input id="myButton3" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject03').value)   
+    document.getElementById('myDiv03').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + 
+          myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'
+}">
+<div id='myDiv03'>...</div>
