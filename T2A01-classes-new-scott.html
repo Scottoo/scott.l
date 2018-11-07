@@ -1,0 +1,55 @@
+<h2 align=center>Javascript Classes Introduction by scott</h2>
+
+
+<input type=text id="myNameInput" placeholder="Enter an animal name here" value="">
+<input id="myButton130" type="button" value="Make and Show the class myAnimal" onclick="{
+  class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+   myShow(){    
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+  }  // end class myAnimal
+     myDog = new myAnimal('Snickers', 5)
+   myDog.myShow()      
+}"><br><br>
+<div id='myDiv130'>...</div><br>
+
+
+<input type=text id="myNameInput" placeholder="Enter an human name here" value="">
+<input id="myButton13" type="button" value="Make and Show the class myname" onclick="{
+  class myHuman {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+   myShow(){    
+       document.getElementById('myDiv13').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+  }  // end class myHuman
+     myHuman = new myHuman('scott', 92000000000000000)
+   myHuman.myShow()      
+}"><br><br>
+<div id='myDiv13'>...</div><br>
+
+
+<input type=text id="myNameInput1" placeholder="Enter an detail name here" value="">
+<input id="myButton1300" type="button" value="Make and Show the class mydetail" onclick="{
+  class myDetail {
+    constructor(passLastname, passPassword) {
+       this.myLastname = passLastname;
+       this.myPassword = passPassword;
+    }
+   myShow(){    
+       document.getElementById('myDiv1300').innerHTML = 'Hello '+ this.myLastname + '. this code ' + this.myPassword + ' is a lot of number<br>'
+    }
+  }  // end class myHuman
+     myDetail = new myDetail('livingstone', 00000000000000000000001000000000000000000)
+   myDetail.myShow()      
+}"><br><br>
+<div id='myDiv1300'>...</div><br>
+
+
+
