@@ -1,0 +1,22 @@
+<h1 aligh=center> Touch Event and to google by scott</h1>
+<input type=text value="works the same as the button" onclick="{ location = 'https:google.ca' }">
+<input type=button value="button only but wait 300ms" onclick="{   
+  location = 'https://google.ca'
+}">
+<b onTouchscreen only</b><br><br>
+
+<b onTouchStart="{
+ location  = 'https://google.ca'
+ event.preventDefalut();
+}" onclick="{
+  location = 'https://googlee.ca'
+ }">Both like a button and touchscreen</b> <br><br> 
+
+<b onTouchStart="{this .click(); event.preventDefault();}" onclick="{
+   location = 'https://google.ca/'
+}"> both and better code if identical</b> <br><br>
+
+<input type=button value="both" onTouchstart="{this.click();
+event.preventDefault();}" onclick="{
+    location = 'https://google.ca'
+}"> <br><br>
