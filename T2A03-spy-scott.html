@@ -1,20 +1,70 @@
-<h1 aligh=center> Encryption by scott</h1>
-<textarea id="myArea04" rows=4 cols=70>Hello how are you!</Textarea><br>
+<h1 align=center> Encrypt by scott</h1>
+<textarea id="myArea01" rows=4 cols=70>How are you doing</textarea><br> 
 
-<input type=button value="string Encrypt" onclick="{
-  let myString = document.getElementById('myArea04').value.toLowerCase()
-let myTemp += string.fromCharCode(myString.charCodeAt(x)+1)
-}
-  document.getElementById('myArea05').value = myTemp
+<input type=button value="encrypt" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'e') {myTemp  = 'f'} 
+      if (myString[myLoop] == 'h') {myTemp  = 'i'} 
+
+      //alert(myLoop+', '+myString[myLoop])
+
+      myString[myLoop] = myTemp
+   }
+
+   document.getElementById('myArea02').value = myString.join('')
 }"><br><br>
 
-<textarea id="myArea05" rows=4 cols=70></textarea><br>
-<input type=button value="string Decrypt" onclick="{
-  letString = document.getElementById('myArea05').value.toLowerCase()
-  let myTemp =''
-  for (let x=0; x < myString.formCharCode(myString.chatCodeAt(x)-1)
+
+<textarea id="myArea02" rows=4 cols=70></textarea><br> 
+
+<input type=button value="decrypt" onclick="{
+  myString = document.getElementById('myArea02').value.split('')
+  if (myString[0] == 'F') {
+    myString[0] = 'E'
  }
-   document,getElementById('myArea06')>value = myTemp
+  document.getElementById('myArea03').value = myString.join('')
 }"><br><br>
 
-<textarea id="myArea06" rows=4 cols=70></textarea><br>
+
+<textarea id="myArea03" rows=4 cols=70></textarea><br> 
+
+<input type=button value="encrypt the middle box" onclick="{
+ let myString = document.getElementById('myArea01').value.toLowerCase()
+ let myTemp =''
+  for (let x=0; x < myString.length; x++){
+     myTemp += String.fromCharCode(myString.charCodeAt(x)+1) 
+   }
+   document.getElementById('myArea02').value = myTemp
+}"><br><br>
+ 
+<input type=button value="encrypt the buttom box" onclick="{
+ let myString = document.getElementById('myArea02').value.toLowerCase()
+ let myTemp =''
+  for (let x=0; x < myString.length; x++){
+     myTemp += String.fromCharCode(myString.charCodeAt(x)-1) 
+   }
+   document.getElementById('myArea03').value = myTemp
+}"><br><br>
+
+
+<input type=button value="encrypt the middle box a second time" onclick="{
+ let myString = document.getElementById('myArea01').value.toLowerCase()
+ let myTemp =''
+  for (let x=0; x < myString.length; x++){
+     myTemp += String.fromCharCode(myString.charCodeAt(x)+2) 
+   }
+   document.getElementById('myArea02').value = myTemp
+}"><br><br>
+
+<input type=button value="encrypt the buttom box a second time" onclick="{
+ let myString = document.getElementById('myArea02').value.toLowerCase()
+ let myTemp =''
+  for (let x=0; x < myString.length; x++){
+     myTemp += String.fromCharCode(myString.charCodeAt(x)-2) 
+   }
+   document.getElementById('myArea03').value = myTemp
+}"><br><br>
+
